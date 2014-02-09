@@ -1,0 +1,19 @@
+{
+  "name": "handlebars-partials-sample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kahwee/handlebars-partials-sample",
+  "authors": [
+    "KahWee Teng <t@kw.sg>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~1.3.0"
+  }
+}
