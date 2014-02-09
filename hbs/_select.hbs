@@ -1,0 +1,8 @@
+
+      {{display}}:
+      <select id="field[{{@key}}]">
+        <option value="" disabled selected style="display:none;">{{placeholder}}</option>
+        {{#each options}}
+          <option value="{{@key}}">{{this}}</option>
+        {{/each}}
+      </select>

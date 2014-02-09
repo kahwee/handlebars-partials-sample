@@ -1,0 +1,23 @@
+{
+  "name": "handlebars-partials-sample",
+  "version": "0.0.0",
+  "description": "handlebars-partials-sample ==========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kahwee/handlebars-partials-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kahwee/handlebars-partials-sample/issues"
+  },
+  "homepage": "https://github.com/kahwee/handlebars-partials-sample",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-handlebars": "~0.6.1"
+  }
+}

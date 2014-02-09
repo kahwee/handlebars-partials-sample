@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/jQuery/dist/jquery.js"></script>
+  </head>
+  <body>
+    <h3>
+      Non-precompiled
+    </h3>
+    <section id="basic">
+
+    </section>
+
+    <h3>
+      Precompiled
+    </h3>
+    <section id="precompiled">
+
+    </section>
+    <script id="form-template" type="text/x-handlebars-template">
+      {{#each fields}}
+        <div>
+          {{#if_eq type "select"}}
+            {{> basic-select}}
+          {{/if_eq}}
+          {{#if_eq type "email"}}
+            {{> basic-email}}
+          {{/if_eq}}
+        </div>
+      {{/each}}
+    </script>
+    <script id="select-partial" type="text/x-handlebars-template">
+      {{display}}:
+      <select id="field[{{@key}}]">
+        <option value="" disabled selected style="display:none;">{{placeholder}}</option>
+        {{#each options}}
+          <option value="{{@key}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </script>
+    <script id="email-partial" type="text/x-handlebars-template">
+      {{display}}:
+      <input type="email" id="field[{{@key}}]" placeholder="{{placeholder}}"></input>
+    </script>
+    <!-- Shared by both -->
+    <script src="js/helpers.js"></script>
+    <script src="js/fixtures.js"></script>
+    <!-- Used by basic -->
+    <script src="js/basic.js"></script>
+    <!-- Used by precompiled -->
+    <script src="js/hbs-templates.js"></script>
+    <script src="js/precompiled.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+      {{#each fields}}
+        <div>
+          {{#if_eq type "select"}}
+            {{> basic-select}}
+          {{/if_eq}}
+          {{#if_eq type "email"}}
+            {{> basic-email}}
+          {{/if_eq}}
+        </div>
+      {{/each}}
