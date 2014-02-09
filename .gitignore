@@ -89,8 +89,3 @@ build
 
 node_modules
 npm-debug.log
-bower_components
-
-vh_components
-/config/tsar.json
-/links
