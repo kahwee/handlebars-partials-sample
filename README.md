@@ -1,5 +1,7 @@
 handlebars-partials-sample
 ==========================
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/kahwee/handlebars-partials-sample.svg)](https://greenkeeper.io/)
 Sample code for using partials in handlebars
 
 See the live demo here:
